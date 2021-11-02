@@ -12,6 +12,8 @@
 
 ActiveRecord::Schema.define(version: 2021_10_29_205603) do
 
+  enable_extension "plpgsql"
+
   create_table "games", force: :cascade do |t|
     t.string "choiceA"
     t.string "choiceB"
